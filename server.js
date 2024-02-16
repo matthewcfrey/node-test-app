@@ -9,7 +9,7 @@ const server = http.createServer(function (request, response) {
 });
 
 // Listen on port 8080 on localhost
-const port = 8080;
+const port = process.env.PORT || 8080;
 server.listen(port);
 
 // display a message on the terminal
